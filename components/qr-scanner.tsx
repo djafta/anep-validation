@@ -1,20 +1,16 @@
 "use client"
-import { useState } from "react";
-import { useZxing } from "react-zxing";
+import { Result, useZxing } from "react-zxing";
 
-export default function QRScanner() {
-  const [result, setResult] = useState("");
+export type QRScannerProps = {
+  onDecodeResult: (decoded: Result) => void;
+};
 
+export default function QRScanner({ onDecodeResult }: QRScannerProps) {
   const { ref } = useZxing({
-    onDecodeResult(decoded) {
-      setResult(decoded.getText());
-    },
+    onDecodeResult
   });
 
   return (
-    <div className="flex flex-col items-center gap-4 p-4">
-      <video ref={ ref } className="w-full max-w-md rounded-lg shadow"/>
-      <p>{ result }</p>
-    </div>
+    <video ref={ ref } className="w-full h-full aspect-auto object-cover"/>
   );
 }
