@@ -2,24 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { Award, CreditCard, FileText, QrCode } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link";
+import { Header } from "@/components/header";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      <header
-        className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-center">
-            <Image
-              src="/logo-full.png"
-              alt="ANEP - Autoridade Nacional da Educação Profissional"
-              width={ 200 }
-              height={ 60 }
-              className="h-12 w-auto"
-            />
-          </div>
-        </div>
-      </header>
+      <Header/>
 
       <section className="py-20 bg-background min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
@@ -32,11 +21,14 @@ export default function HomePage() {
             </p>
 
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-semibold mb-16"
             >
-              <QrCode className="w-6 h-6 mr-3"/>
-              Validar Documento
+              <Link href="/scan">
+                <QrCode className="w-6 h-6 mr-3"/>
+                Validar Documento
+              </Link>
             </Button>
 
             <div className="max-w-xs mx-auto">
