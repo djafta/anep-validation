@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { startTransition, useActionState, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowLeft, Camera, CheckCircle, XCircle } from "lucide-react"
@@ -8,13 +8,27 @@ import Link from "next/link"
 import Image from "next/image"
 import QRScanner from "@/components/qr-scanner";
 import { Result } from "react-zxing";
+import { validateQRAction } from "@/actions/validate-qr.action";
+import SgexValidationResult from "@/components/sgex-validation-result";
 
 export default function ScanPage() {
   const [isScanning, setIsScanning] = useState(false)
   const [scanResult, setScanResult] = useState<"success" | "error" | null>(null)
+  const [state, dispatch, isPending] = useActionState(validateQRAction, null);
 
   function onDecodeResult(result: Result) {
-    console.log(result.getText())
+    const code = result.getText();
+    if (code) {
+      const formData = new FormData();
+      formData.append("code", code);
+      startTransition(() => {
+        dispatch(formData);
+      })
+    }
+  }
+
+  if (state && state.success) {
+    return <SgexValidationResult data={ state.payload }/>
   }
 
   return (
