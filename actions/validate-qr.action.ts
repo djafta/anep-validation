@@ -5,7 +5,7 @@ export async function validateQRAction(state: unknown, formData: FormData) {
     const code = formData.get('code') as string;
 
     if (code.startsWith('sgex_')) {
-      const response = await fetch(`${ process.env.SGEX_API_URL }/validate/${ code }`)
+      const response = await fetch(`${ process.env.SGEX_API_URL }/templates/validate/${ code }`)
 
       if (!response.ok) {
         throw new Error('Erro ao validar o QR Code');
