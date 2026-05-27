@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 
 export default async function ValidateCodePage({ params }: { params: Promise<{ code: string }> }) {
   try {
-
-
     const { code } = await params;
 
     if (code.startsWith('sgex_')) {

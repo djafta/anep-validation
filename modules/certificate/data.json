@@ -1,0 +1,255 @@
+{
+	"certificate":
+	{
+		"ANEP":
+		{
+			"address": "ANEP: Av. M\u00e3o Tse Tung No. 72. P.O Box 4063, Maputo, Mo\u00e7ambique",
+			"addressLocale": "Maputo",
+			"email": "Email: direccao-geral@anep.gov.mz",
+			"id": 50,
+			"managerName": "Uilson Timana",
+			"managerPos": "O Director Geral",
+			"name": "ANEP",
+			"telephoneNumber": "Tel. 258 21 484 030 Fax. +258 21 486 127 Cel.: +258 82 3209730 / 823043568 / 843899397"
+		},
+		"certification":
+		{
+			"achievedStatus": "tendo alcan\u00e7ado com m\u00e9rito",
+			"completionYear": 2020,
+			"institution": "Instituto Agrario de Mocuba ",
+			"number": "2026-000054",
+			"qualificationLevel": "Certificado N\u00edvel 3",
+			"title": "CV3 em Agro-Pecu\u00e1ria"
+		},
+		"IEP":
+		{
+			"address": "Samora Machel , Cidade de Mocuba ",
+			"addressLocale": "Mocuba sede",
+			"email": "h.mabuleza@gmail.com ",
+			"id": 83,
+			"managerName": "Manuel Monica ",
+			"managerPos": "Director",
+			"name": "Instituto Agrario de Mocuba ",
+			"telephoneNumber": ""
+		},
+		"modules":
+		[
+			{
+				"ects": 2,
+				"id": "UC HG013001",
+				"order": 1,
+				"title": "Relacionar-se socialmente de forma eficaz"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG013002",
+				"order": 2,
+				"title": "Preparar-se para o emprego"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG024001",
+				"order": 3,
+				"title": "Usar a l\u00edngua Inglesa com prop\u00f3sitos sociais, pessoais e de neg\u00f3cios"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG025002",
+				"order": 4,
+				"title": "Comunicar informac\u0327a\u0303o relacionado com o trabalho"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG023003",
+				"order": 5,
+				"title": "Ler e responder a materiais escritos em l\u00edngua Inglesa"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG023004",
+				"order": 6,
+				"title": "Produzir materiais escritos em l\u00edngua Inglesa"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG033001",
+				"order": 7,
+				"title": "Resolve problemas econ\u00f3micos simples da vida pessoal e da comunidade"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG033002",
+				"order": 8,
+				"title": "Calcula dist\u00e2ncias entre pontos de dif\u00edcil acesso"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG043001",
+				"order": 9,
+				"title": "Interpretar e produzir enunciados escritos e orais de car\u00e1cter informativo-funcional"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG043002",
+				"order": 10,
+				"title": "Interpretar e produzir textos orais e escritos de interesse quotidiano"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG053001",
+				"order": 11,
+				"title": "Utilizar o computador pessoal para acesso \u00e0 informa\u00e7\u00e3o e comunica\u00e7\u00e3o"
+			},
+			{
+				"ects": 2,
+				"id": "UC HG053002",
+				"order": 12,
+				"title": "Utilizar aplica\u00e7\u00f5es de interface gr\u00e1fico (GUI) para produ\u00e7\u00e3o de documentos, apresenta\u00e7\u00f5es e folhas de c\u00e1lculo simples"
+			},
+			{
+				"ects": 2,
+				"id": "UC AGR01301161",
+				"order": 13,
+				"title": "Cumprir com medidas de higiene e seguran\u00e7a no trabalho (HST) e de protec\u00e7\u00e3o ambiental numa unidade de produ\u00e7\u00e3o agro-pecu\u00e1ria"
+			},
+			{
+				"ects": 2,
+				"id": "UC AGR01302161",
+				"order": 14,
+				"title": "Interpretar a influ\u00eancia do clima na agricultura e pecu\u00e1ria"
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01303161",
+				"order": 15,
+				"title": "Identificar e seleccionar culturas, animais e sistemas de produ\u00e7\u00e3o para um dado local"
+			},
+			{
+				"ects": 6,
+				"id": "UC AGR01304161",
+				"order": 16,
+				"title": "Identificar e fertilizar os solos "
+			},
+			{
+				"ects": 3,
+				"id": "UC AGR01305161",
+				"order": 17,
+				"title": "Interpretar e usar mapas e realizar levantamentos topogr\u00e1ficos simples "
+			},
+			{
+				"ects": 6,
+				"id": "UC AGR01306161",
+				"order": 18,
+				"title": "Identificar, propagar e manipular plantas"
+			},
+			{
+				"ects": 7,
+				"id": "UC AGR01307161",
+				"order": 19,
+				"title": "Estabelecer e conduzir uma cultura "
+			},
+			{
+				"ects": 6,
+				"id": "UC AGR01308161",
+				"order": 20,
+				"title": "Identificar, monitorar e controlar pragas e doen\u00e7as nas culturas usando pesticidas e pulverizadores manuais"
+			},
+			{
+				"ects": 5,
+				"id": "UC AGR01309161",
+				"order": 21,
+				"title": "Operar e realizar manuten\u00e7\u00e3o b\u00e1sica nos sistemas de rega e drenagem"
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01310161",
+				"order": 22,
+				"title": "Colher e manusear produtos agr\u00edcolas ap\u00f3s a colheita"
+			},
+			{
+				"ects": 7,
+				"id": "UC AGR01311161",
+				"order": 23,
+				"title": "Usar e realizar a manuten\u00e7\u00e3o de ferramentas manuais e equipamento agro-pecu\u00e1rio manual e mec\u00e2nico b\u00e1sico"
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01312161",
+				"order": 24,
+				"title": "Construir e realizar a manuten\u00e7\u00e3o de instala\u00e7\u00f5es agro-pecu\u00e1rias simples "
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01313161",
+				"order": 25,
+				"title": "Identificar, observar e manusear os animais de interesse pecu\u00e1rio"
+			},
+			{
+				"ects": 2,
+				"id": "UC AGR01314161",
+				"order": 26,
+				"title": "Identificar as principais pastagens de Mo\u00e7ambique e aplicar princ\u00edpios de maneio de pastagens "
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01315161",
+				"order": 27,
+				"title": "Aplicar procedimentos padronizados de alimenta\u00e7\u00e3o animal "
+			},
+			{
+				"ects": 6,
+				"id": "UC AGR01316161",
+				"order": 28,
+				"title": "Aplicar procedimentos de controlo de doen\u00e7as dos animais "
+			},
+			{
+				"ects": 2,
+				"id": "UC AGR01317161",
+				"order": 29,
+				"title": "Identificar ideias de neg\u00f3cios agr\u00edcolas, pecu\u00e1rios ou agro-pecu\u00e1rios"
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01318161",
+				"order": 30,
+				"title": "Recolher, registar e organizar dados numa unidade de produ\u00e7\u00e3o agro-pecu\u00e1ria"
+			},
+			{
+				"ects": 4,
+				"id": "UC AGR01319161",
+				"order": 31,
+				"title": "Manusear insumos e stocks numa unidade de produ\u00e7\u00e3o agro-pecu\u00e1ria"
+			},
+			{
+				"ects": 2,
+				"id": "UC AGR01320161",
+				"order": 32,
+				"title": "Trabalhar com efici\u00eancia numa unidade de produ\u00e7\u00e3o agro-pecu\u00e1ria"
+			},
+			{
+				"ects": 2,
+				"id": "UC GER033015191",
+				"order": 33,
+				"title": "Projecto Integrado3"
+			},
+			{
+				"ects": 10,
+				"id": "UC GER033016191",
+				"order": 34,
+				"title": "Experi\u00eancia de trabalho3"
+			}
+		],
+		"trainee":
+		{
+			"birthDate": "19980524",
+			"birthPlace": "Mocuba",
+			"employeeNumber": "2050915756G",
+			"fathersName": "Hermelindo Muitela Dias",
+			"mothersName": "Adelaide Francisco",
+			"name": "Avoneta Hermelindo Muitela Dias",
+			"PersonID": "100106443914C"
+		}
+	},
+	"generatedDate": "20260525",
+	"status": "VALID"
+}
