@@ -1,7 +1,19 @@
 import { CertificatePage } from "@/components/certificate/certificate.page";
-import data from "@/modules/certificate/data.json";
+import { api } from "@/modules/certificate/certificate.api";
+import { notFound } from "next/navigation";
 
-export default async function Page() {
+export type PageProps = {
+  params: Promise<{
+    code: string
+  }>
+}
+
+export default async function Page({ params }: PageProps) {
+  const { code } = await params;
+  const data = await api.getCertificateData(code)
+  if (!data) {
+    return notFound();
+  }
   return (
     <div>
       <CertificatePage certificateData={ data }/>

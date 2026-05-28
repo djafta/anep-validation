@@ -2,6 +2,7 @@
 
 import { CertificateData, Module } from "@/modules/certificate/certificate.types";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export type CertificatePageProps = {
   certificateData: CertificateData
@@ -10,12 +11,16 @@ export type CertificatePageProps = {
 export function CertificatePage({ certificateData }: CertificatePageProps) {
   return (
     <div className={ "mx-auto px-4 max-w-6xl flex flex-col space-y-4" }>
-      <section className={ "min-h-screen py-3" }>
-        <Badge className={ "text-sm rounded-full" }>
-          Certificado Válido
-        </Badge>
+      <section className={ "py-3" }>
+        <header className={ "flex flex-col gap-4 py-20" }>
+          <Image className={ "max-w-60 mx-auto" } width={ 1000 } height={ 600 } src={ "/logo-full.png" }
+                 alt={ "Logotipo da ANEP" }/>
+          <Badge className={ "text-sm rounded-full mx-auto" }>
+            Certificado Válido
+          </Badge>
+        </header>
         <div className={ "my-10" }>
-          <h1 className={ "text-lg font-semibold" }>Certificado de Conclusão da Qualificação</h1>
+          <h1 className={ "text-lg font-semibold text-center" }>Certificado de Conclusão da Qualificação</h1>
         </div>
       </section>
       <div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { startTransition, useActionState, useState } from "react"
+import { useActionState, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { AlertTriangle, ArrowLeft, Camera, RefreshCw, XCircle } from "lucide-react"
@@ -10,6 +10,7 @@ import QRScanner from "@/components/qr-scanner"
 import { Result } from "react-zxing"
 import { validateQRAction } from "@/actions/validate-qr.action"
 import SgexValidationResult from "@/components/sgex-validation-result"
+import { useRouter } from "next/navigation";
 
 type ScanState = "idle" | "scanning" | "pending"
 
@@ -31,16 +32,12 @@ function StepIndicator({ step }: { step: 1 | 2 | 3 }) {
 export function ScanPage() {
   const [scanState, setScanState] = useState<ScanState>("idle")
   const [state, dispatch, isPending] = useActionState(validateQRAction, null)
+  const router = useRouter();
 
   function onDecodeResult(result: Result) {
     const code = result.getText()
     if (!code) return
-    setScanState("pending")
-    const formData = new FormData()
-    formData.append("code", code)
-    startTransition(() => {
-      dispatch(formData)
-    })
+    router.push(`/resources/${ code }`)
   }
 
   function handleCancel() {
