@@ -5,6 +5,8 @@ async function getCredentials(): Promise<{ Token: string, Expires: string } | nu
     password: process.env.SEGI_API_PASSWORD,
   });
 
+  console.log({ body })
+
   const response = await fetch(`${ process.env.SEGI_API_BASE_URL }/login`, {
 
     method: 'POST',
