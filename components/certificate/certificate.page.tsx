@@ -25,14 +25,15 @@ export function CertificatePage({ certificateData }: CertificatePageProps) {
       </section>
       <div>
         <p className={ "text-justify leading-8" }>
-          A <strong>Autoridade Nacional de Educação Profissional</strong> certifica
-          que <strong>{ certificateData.certificate.trainee.name }</strong> concluiu a
-          qualificação <strong>{ certificateData.certificate.certification.title }</strong>
-          { " " }
-          <strong>{ certificateData.certificate.certification.achievedStatus }</strong>,
-          no ano de { certificateData.certificate.certification.completionYear },
-          ministrado pelo <strong>{ certificateData.certificate.certification.institution }</strong>, tendo completado
-          todas as unidades de competência que compõe a qualificação.
+          A Autoridade Nacional de Educação Profissional (ANEP) CERTIFICA
+          que, <strong>{ certificateData.certificate.trainee.name }</strong>,
+          filho(a) de <strong>{ certificateData.certificate.trainee.fathersName }</strong> e
+          de <strong>{ certificateData.certificate.trainee.mothersName }</strong>, natural
+          de <strong>{ certificateData.certificate.trainee.birthPlace }</strong> concluio,
+          em <strong>{ certificateData.certificate.certification.completionYear }</strong> o
+          <strong>{ certificateData.certificate.certification.qualificationLevel } em
+            <strong>{ certificateData.certificate.certification.title }</strong></strong> no(a)
+          <strong>{ certificateData.certificate.certification.institution }</strong> { certificateData.certificate.certification.qualificationLevel.includes('5') ? ', o que lhe confere o Nível Médio no Sistema Nacional de Educação.' : '.' }
         </p>
       </div>
       <section className={ "py-20 space-y-4" }>

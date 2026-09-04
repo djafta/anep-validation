@@ -41,7 +41,10 @@ async function getCertificateData(token: string) {
     }
   })
 
+  console.log(response)
+
   if (response.ok) {
+    console.log('Certificate data fetched successfully');
     return response.json();
   }
 
