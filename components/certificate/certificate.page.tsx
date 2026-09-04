@@ -9,6 +9,8 @@ export type CertificatePageProps = {
 }
 
 export function CertificatePage({ certificateData }: CertificatePageProps) {
+  const { trainee, certification } = certificateData.certificate;
+
   return (
     <div className={ "mx-auto px-4 max-w-6xl flex flex-col space-y-4" }>
       <section className={ "py-3" }>
@@ -24,16 +26,19 @@ export function CertificatePage({ certificateData }: CertificatePageProps) {
         </div>
       </section>
       <div>
-        <p className={ "text-justify leading-8" }>
-          A Autoridade Nacional de Educação Profissional (ANEP) CERTIFICA
-          que, <strong>{ certificateData.certificate.trainee.name }</strong>,
-          filho(a) de <strong>{ certificateData.certificate.trainee.fathersName }</strong> e
-          de <strong>{ certificateData.certificate.trainee.mothersName }</strong>, natural
-          de <strong>{ certificateData.certificate.trainee.birthPlace }</strong> concluio,
-          em <strong>{ certificateData.certificate.certification.completionYear }</strong> o
-          <strong>{ certificateData.certificate.certification.qualificationLevel } em
-            <strong>{ certificateData.certificate.certification.title }</strong></strong> no(a)
-          <strong>{ certificateData.certificate.certification.institution }</strong> { certificateData.certificate.certification.qualificationLevel.includes('5') ? ', o que lhe confere o Nível Médio no Sistema Nacional de Educação.' : '.' }
+        <p className="text-justify leading-8">
+          A Autoridade Nacional de Educação Profissional (ANEP) CERTIFICA que,{ ' ' }
+          <strong>{ trainee.name }</strong>, filho(a) de{ ' ' }
+          <strong>{ trainee.fathersName }</strong> e de{ ' ' }
+          <strong>{ trainee.mothersName }</strong>, natural de{ ' ' }
+          <strong>{ trainee.birthPlace }</strong>, concluiu, em{ ' ' }
+          <strong>{ certification.completionYear }</strong> o{ ' ' }
+          <strong>{ certification.qualificationLevel }</strong> em{ ' ' }
+          <strong>{ certification.title }</strong> no(a){ ' ' }
+          <strong>{ certification.institution }</strong>
+          { certification.qualificationLevel.includes('5')
+            ? ', o que lhe confere o Nível Médio no Sistema Nacional de Educação.'
+            : '.' }
         </p>
       </div>
       <section className={ "py-20 space-y-4" }>
