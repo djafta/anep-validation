@@ -1,0 +1,10 @@
+allowBuilds:
+  '@tailwindcss/oxide': true
+  sharp: true
+  unrs-resolver: true
+permissions:
+  dotenv:
+    skills: true
+skills:
+  dirs:
+    - .claude/skills

@@ -1,0 +1,32 @@
+
+services:
+  anep-validation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    restart: unless-stopped
+
+    expose:
+      - "3000"
+
+    networks:
+      - web-proxy
+
+    labels:
+      # Enable Traefik for this container.
+      - "traefik.enable=true"
+      - "traefik.docker.network=web-proxy"
+
+      # Configure the HTTPS router.
+      - "traefik.http.routers.anep-validation.rule=Host(`validar.anep.gov.mz`)"
+      - "traefik.http.routers.anep-validation.entrypoints=websecure"
+      - "traefik.http.routers.anep-validation.tls=true"
+      - "traefik.http.routers.anep-validation.tls.certresolver=anep"
+
+      # Configure the internal application port.
+      - "traefik.http.services.anep-validation.loadbalancer.server.port=3000"
+
+networks:
+  web-proxy:
+    external: true
