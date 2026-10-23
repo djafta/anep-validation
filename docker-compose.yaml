@@ -7,6 +7,9 @@ services:
 
     restart: unless-stopped
 
+    env_file:
+      - .env
+
     expose:
       - "3000"
 
